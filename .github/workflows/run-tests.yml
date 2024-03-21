@@ -11,4 +11,5 @@ jobs:
           node-version: '18'
       - run: yarn global add bats
       - run: bats -v
+      - run: yarn global add jest
       - run: yarn jest
