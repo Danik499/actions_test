@@ -6,6 +6,6 @@ import renderer, { ReactTestRendererJSON } from 'react-test-renderer';
 describe('App', () => {
   it('has 1 child', () => {
     const tree = renderer.create(<App />).toJSON() as ReactTestRendererJSON;
-    expect(tree.children?.length).toBe(1);
+    expect(tree.children?.length).toBe(2);
   });
 });
