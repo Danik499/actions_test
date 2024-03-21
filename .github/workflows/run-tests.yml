@@ -9,6 +9,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '18'
-      - run: yarn install -g bats
+      - run: yarn global add bats
       - run: bats -v
       - run: yarn jest
